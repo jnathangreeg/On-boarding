@@ -54,7 +54,7 @@ func performCalculation(req CalculationRequest) CalculationResponse {
 	case "subtract":
 		result = req.A - req.B
 	case "multiply":
-			result = req.A * req.B
+		result = req.A * req.B
 	case "divide":
 		if req.B == 0 {
 			err = fmt.Errorf("cannot divide by zero")
